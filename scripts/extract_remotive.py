@@ -42,6 +42,8 @@ def get_all_jobs(categories):
         print(f"Jobs fetched: {len(jobs)} for {category}")
         all_jobs.extend(jobs)
 
+        time.sleep(0.5) # respectful of the api
+
     return all_jobs
 
 def save_jobs(jobs):
